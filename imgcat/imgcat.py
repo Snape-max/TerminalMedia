@@ -48,6 +48,8 @@ def show_help():
 
 def main():
     if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]):
+        if not os.path.isfile(sys.argv[1]):
+            print("File does not exist")
         show_help()
     else:
         image_path = sys.argv[1]
