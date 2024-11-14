@@ -44,7 +44,7 @@ def img2txt(img_path: str) -> None:
 def show_help():
     print("Display an image on the terminal")
     print("Usage:")
-    print("  dspi <image_path>")
+    print("  imgcat <image_path>")
 
 def main():
     if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]):
