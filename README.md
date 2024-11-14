@@ -44,3 +44,7 @@ pip install git+https://github.com/Snape-max/imgcat.git
 ```bash
 imgcat <image_path>
 ```
+
+## Display
+
+<img src="./asset/screenshot.png" width="800">
