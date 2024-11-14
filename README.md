@@ -1,19 +1,19 @@
 
-## DSPI: A simple tool to show image in terminal
+## imgcat: A simple tool to show image in terminal
 
 
 <p align="center">
-    <a href="https://github.com/Snape-max/dspi" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/stars/Snape-max/dspi" alt="Github Stars" />
+    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/stars/Snape-max/imgcat" alt="Github Stars" />
     </a>
-    <a href="https://github.com/Snape-max/dspi" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/forks/Snape-max/dspi" alt="Github Forks" />
+    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/forks/Snape-max/imgcat" alt="Github Forks" />
     </a>
-    <a href="https://github.com/Snape-max/dspi" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/languages/code-size/Snape-max/dspi" alt="Code-size" />
+    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/languages/code-size/Snape-max/imgcat" alt="Code-size" />
     </a>
-    <a href="https://github.com/Snape-max/dspi">
-        <img src="https://img.shields.io/github/v/release/Snape-max/dspi"
+    <a href="https://github.com/Snape-max/imgcat">
+        <img src="https://img.shields.io/github/v/release/Snape-max/imgcat"
             alt="Latest Release">
     </a>
 </p>
@@ -21,16 +21,17 @@
 ## Installation
 
 ```bash
-pip3 install dspi
+git clone https://github.com/Snape-max/imagecat.git
+cd imagecat
+python install .
 ```
 
 or
 
 ```bash
-git clone https://github.com/Snape-max/dspi.git
-cd dspi
-python install .
+pip install git+https://github.com/Snape-max/imgcat.git
 ```
+
 
 ## Requirements
 
@@ -41,5 +42,5 @@ python install .
 ## Usage
 
 ```bash
-dspi <image_path>
+imgcat <image_path>
 ```

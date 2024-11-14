@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='dspi',
+    name='imgcat',
     version='0.1.0',
     description='A tool to display images in the terminal',
     author='Snape-max',
     author_email='ssnape@qq.com',
-    url='https://github.com/Snape-max/dsp',  # 你的项目主页
+    url='https://github.com/Snape-max/imgcat',  # 你的项目主页
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'dspi=dspi.dspi:main',
+            'imgcat=imgcat.imgcat:main',
         ],
     },
     install_requires=[
