@@ -47,11 +47,12 @@ def show_help():
     print("  imgcat <image_path>")
 
 def main():
-    if len(sys.argv) != 2 or not os.path.isfile(sys.argv[1]):
-        if not os.path.isfile(sys.argv[1]):
-            print("File does not exist")
+    if len(sys.argv) != 2:
         show_help()
     else:
+        if not os.path.isfile(sys.argv[1]):
+            print("File does not exist")
+            return
         image_path = sys.argv[1]
         img2txt(image_path)
 
