@@ -1,19 +1,19 @@
 
-## imgcat: A simple tool to show image in terminal
+## TerminalMedia: A simple tool to display images and videos in terminal
 
 
 <p align="center">
-    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/stars/Snape-max/imgcat" alt="Github Stars" />
+    <a href="https://github.com/Snape-max/TerminalMedia" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/stars/Snape-max/TerminalMedia" alt="Github Stars" />
     </a>
-    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/forks/Snape-max/imgcat" alt="Github Forks" />
+    <a href="https://github.com/Snape-max/TerminalMedia" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/forks/Snape-max/TerminalMedia" alt="Github Forks" />
     </a>
-    <a href="https://github.com/Snape-max/imgcat" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
-        <img src="https://img.shields.io/github/languages/code-size/Snape-max/imgcat" alt="Code-size" />
+    <a href="https://github.com/Snape-max/TerminalMedia" target="_blank" style="margin-right: 20px; font-style: normal; text-decoration: none;">
+        <img src="https://img.shields.io/github/languages/code-size/Snape-max/TerminalMedia" alt="Code-size" />
     </a>
-    <a href="https://github.com/Snape-max/imgcat">
-        <img src="https://img.shields.io/github/v/release/Snape-max/imgcat"
+    <a href="https://github.com/Snape-max/TerminalMedia">
+        <img src="https://img.shields.io/github/v/release/Snape-max/TerminalMedia"
             alt="Latest Release">
     </a>
 </p>
@@ -21,7 +21,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/Snape-max/imagecat.git
+git clone https://github.com/Snape-max/TerminalMedia.git
 cd imagecat
 python install .
 ```
@@ -29,7 +29,7 @@ python install .
 or
 
 ```bash
-pip install git+https://github.com/Snape-max/imgcat.git
+pip install TerminalMedia
 ```
 
 
@@ -37,12 +37,14 @@ pip install git+https://github.com/Snape-max/imgcat.git
 
 - Python 3.6+
 - Pillow for image reading
+- opencv-python for videos
 
 
 ## Usage
 
 ```bash
-imgcat <image_path>
+icat <image_path> # display image
+vcat <video_path> # display video
 ```
 
 ## Display

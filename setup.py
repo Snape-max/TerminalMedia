@@ -1,20 +1,22 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='imgcat',
-    version='0.1.0',
-    description='A tool to display images in the terminal',
+    name='TerminalMedia',
+    version='0.1.1',
+    description='A tool to display images and videos in the terminal',
     author='Snape-max',
     author_email='ssnape@qq.com',
-    url='https://github.com/Snape-max/imgcat',  # 你的项目主页
+    url='https://github.com/Snape-max/TerminalMedia',  # 你的项目主页
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'imgcat=imgcat.imgcat:main',
+            'icat=tmt.imgcat:main',
+            'vcat=tmt.videocat:main',
         ],
     },
     install_requires=[
         'Pillow',
+        'opencv-python'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
