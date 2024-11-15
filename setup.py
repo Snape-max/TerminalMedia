@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'terminalmedia=tmt.terminalmedia:main'
+            'terminalmedia=tmt.terminalmedia:main',
             'icat=tmt.imgcat:main',
             'vcat=tmt.videocat:main',
         ],
