@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='TerminalMedia',
-    version='0.1.1',
+    version='0.1.2',
     description='A tool to display images and videos in the terminal',
     author='Snape-max',
     author_email='ssnape@qq.com',
@@ -10,6 +10,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
+            'termainalmedia=tmt.terminalmedia:main'
             'icat=tmt.imgcat:main',
             'vcat=tmt.videocat:main',
         ],
