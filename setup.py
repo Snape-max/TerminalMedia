@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='TerminalMedia',
-    version='0.1.3',
+    version='0.1.4',
     description='A tool to display images and videos in the terminal',
     author='Snape-max',
     author_email='ssnape@qq.com',

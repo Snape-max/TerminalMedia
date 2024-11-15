@@ -1,6 +1,7 @@
 from PIL import Image
 import shutil
 import cv2
+import os
 
 def block(fc=None, bc=None) -> str:
     """Generate a block character with foreground and background colors."""
@@ -28,8 +29,12 @@ def __frameCat(img: Image.Image) -> None:
         img_path (str): _description_
     """
     # img = img.convert('RGB')
+    sub1, sub2 = 1, 4
+    if os.name == 'posix':
+        sub1, sub2 = 0, 0
+
     terminal_size = shutil.get_terminal_size(fallback=(80, 24))
-    resized_img = fit_image_to_terminal(img, (terminal_size.lines-1, (terminal_size.columns - 4) // 2))
+    resized_img = fit_image_to_terminal(img, (terminal_size.lines - sub1, (terminal_size.columns - sub2) // 2))
     output = '\033[1;1H'
     for y in range(0, resized_img.height, 2):
         for x in range(resized_img.width):
