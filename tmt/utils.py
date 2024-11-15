@@ -62,8 +62,10 @@ def imgCat(image_path: str) -> None:
         img = Image.open(image_path)
     except Image.UnidentifiedImageError:
         print(f"Error: The file at {image_path} is not a valid image file.")
+        return
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+        return
     __imgCat(img)
     
 
