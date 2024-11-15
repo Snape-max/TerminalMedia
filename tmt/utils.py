@@ -27,7 +27,7 @@ def __frameCat(img: Image.Image) -> None:
     Args:
         img_path (str): _description_
     """
-    img = img.convert('RGB')
+    # img = img.convert('RGB')
     terminal_size = shutil.get_terminal_size(fallback=(80, 24))
     resized_img = fit_image_to_terminal(img, (terminal_size.lines-1, (terminal_size.columns - 4) // 2))
     output = '\033[1;1H'
